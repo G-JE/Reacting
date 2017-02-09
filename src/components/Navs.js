@@ -3,10 +3,10 @@ import { ReactDOM } from 'react'
 import DOM from 'react-dom'
 import { Link } from 'react-router'
 
-class Navs extends React.Component{
+class Navs extends React.Component {
 
     render() {
-        let props =  this.props
+        let props = this.props
         return (
             <ul>
                 <li><Link to="/" activeClassName="active">Home</Link></li>
@@ -19,8 +19,8 @@ class Navs extends React.Component{
                     <li><a href="https://github.com/G-JE"><span data-icon="&#xe0a0;"></span></a></li>
                 </ul>
             </ul>
-            )
-       }  
+        )
+    }
 }
 
 export default Navs

@@ -1,27 +1,44 @@
 import React from 'react'
 import { ReactDOM } from 'react'
 import DOM from 'react-dom'
+import { connect } from 'react-redux'
 
-class Gallery extends React.Component{
-    
+class Gallery extends React.Component {
+
     render() {
+        let images = this.props.images;
 
-        let nums = [1,1,1,1,1]
+        let gall = images.map((image, i) => {
+            let style
+            if (image.width > image.height) {
+                style = {
+                    width: "100%",
+                    objectFit: "contain"
+                }
+            }
 
-        let gall = nums.map( (num,i) => {
-                 return (
-                        <div key={i} className="gallery_item">
-                        I am a Gallery Item
-                        </div>
-                     )
-            })
+            else {
+                style = {
+                    height: "100%",
+                    width: "auto"
+                }
+            }
+
+            return (
+                <div key={i} className="image_wrapper">
+                    <div className="gallery_item">
+                        <img src={image.url} style={style} />
+                    </div>
+                </div>
+            )
+        })
 
         return (
             <div className="gallery">
                 {gall}
-             </div>
+            </div>
         )
-    }  
+    }
 }
 
 export default Gallery

@@ -16,7 +16,7 @@ class Logo extends React.Component{
         }
 
         return (
-           <img style={styles} src="../Images/Brand.png"></img>
+           <img style={styles} className="image" src="./Images/Brand.png"></img>
             )
        }  
 }
