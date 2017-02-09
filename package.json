@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack",
-    "start": "babel-node tools/publicServer.js",
+    "start": "./node_modules/bin/babel-node tools/publicServer.js",
     "clean-public": "npm run remove-public && mkdir public",
     "remove-public": "node_modules/.bin/rimraf ./public",
     "build:html": "babel-node tools/buildHtml.js",
@@ -14,6 +14,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.5.2",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.9.1",
