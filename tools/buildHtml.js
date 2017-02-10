@@ -10,6 +10,7 @@ fs.readFile('src/index.html', 'utf8', (e, markup) =>{
   $('head').prepend('');
 
   fs.writeFile('public/index.html', $.html(), 'utf8', function(e){
+    
     if(e) return console.log(e);
 
     console.log('index.html written to /public'.green);

@@ -24,11 +24,12 @@ class Body extends React.Component {
     }
 }
 
+
 function mapStateToProps(state) {
-    const route = state.routing.locationBeforeTransitions
-    const about = state.about
-    const images = state.images
-    return { route, about, images }
+    const route = state.routing.locationBeforeTransitions;
+    const Library = state.Library;
+    const images = state.images;
+    return { route, Library, images }
 }
 
 export default connect(mapStateToProps)(Body)

@@ -14,9 +14,9 @@ class Navs extends React.Component {
                 <li><Link to="/Portfolio" activeClassName="active">Portfolio</Link></li>
                 <li><Link to="/Contact" activeClassName="active">Contact</Link></li>
                 <ul className="social_list">
-                    <li><a href="https://www.instagram.com/gundogmillionaire"><span data-icon="&#xe09a;"></span></a></li>
-                    <li><a href="https://www.linkedin.com/in/gunnarerickson"><span data-icon="&#xe09d;"></span></a></li>
-                    <li><a href="https://github.com/G-JE"><span data-icon="&#xe0a0;"></span></a></li>
+                    <li><a href="https://www.instagram.com/gundogmillionaire"><span className="social_instagram icon_list"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/gunnarerickson"><span className="social_linkedin icon_list"></span></a></li>
+                    <li><a href="https://github.com/G-JE"><span className="social_share icon_list"></span></a></li>
                 </ul>
             </ul>
         )

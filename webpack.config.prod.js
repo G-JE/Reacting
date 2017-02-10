@@ -9,10 +9,10 @@ module.exports =  {
     output:{
         path: path.join(__dirname, 'public'),
         filename: 'bundle.min.js',
-        publicPath: '/public/'
     },
 
     plugins: [
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
@@ -43,15 +43,15 @@ module.exports =  {
             },
             {
                 test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
-                loader: 'file?name=public/fonts/[name].[ext]'
+                loader: 'file?name=fonts/[name].[ext]'
             },
             {
                 test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: "file-loader?name=public/fonts/[name].[ext]"
+                loader: "file-loader?name=fonts/[name].[ext]"
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: "file-loader?name=/public/Images/[name].[ext]"
+                loader: "file-loader?name=/Images/[name].[ext]"
             }
         ]
     }
