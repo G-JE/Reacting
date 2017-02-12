@@ -22,6 +22,7 @@ const router = (
         <Route path="/" component={Home} />
         <Route path="/About" component={Post} />
         <Route path="/Portfolio" component={Gallery} />
+        <Route path="/Portfolio/view/:postid" component={Post} />
         <Route path="/Contact" component={Post} />
       </Route>
     </Router>

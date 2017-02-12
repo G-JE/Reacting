@@ -6,6 +6,7 @@
 	flex-flow: wrap;
 	justify-content:space-around;
 }
+
 @mixin center{
 	align-text: center;
 	align-content: center;
@@ -55,9 +56,9 @@
 }
 
 .gallery_item{
-	margin-bottom:50px;
 	display:flex;
 	@include center;
+	text-align:center;
 }
 
 h1{
@@ -112,10 +113,12 @@ a {
 	width: 90%;
 	color:black;
 	margin: 10px;
+	margin-right:0px;
 	height:35px;
 	transition: .5s ease;
 	border-bottom: 1px solid transparent;
 	white-space: nowrap;
+
 	&:hover{
 		color:cyan;
 		font-size: 1.75em;
@@ -125,14 +128,21 @@ a {
 }
 
 .gallery{
+	margin-top: 75px;
 	@include flex;
 	width:100%;
 }
 
 .image_wrapper{
+	margin-top:25px;
+	margin-bottom:25px;
 	width:300px;
 	height: 300px;
 	display:flex;
+}
+
+img{
+	cursor: pointer;
 }
 
 .active{
@@ -144,11 +154,15 @@ a {
 	}
 }
 
-.image:hover{
+.image{
 
-	transform-origin: center;
-	animation: wobble 2s infinite;
-	animation-timing-function: ease-in-out;
+	transition:.5s;
+
+	&:hover{
+		transform-origin: center;
+		animation: wobble 2s infinite;
+		animation-timing-function: ease-in-out;
+	}
 }
 
 @keyframes wobble{
@@ -203,3 +217,50 @@ cite{
  border-left:none;
  align-self: flex-end;
 }
+
+.arrow_carrot-right{
+font-size:1.5em;
+margin-bottom:5px;
+transition: .5s;
+
+}
+.dropdown{
+	display: none;
+	visibility:hidden;
+}
+
+.horizontal{
+	width: 100%; 
+	display: flex;
+	flex-flow: row;
+	@include center;
+}
+
+.drop{
+	display:flex;
+	flex-flow:wrap column;
+	
+	ul{
+		font-size: .75em;
+	}
+}
+
+.drop >.horizontal:hover > span{
+		transform: rotate(90deg);
+}
+.show { 
+	display: inline-block;
+	display:flex;
+	flex-flow: column;
+	@include center;
+	li{
+		align-self:center;
+		text-align:center;
+	}
+}
+
+.hide{
+	display:none;
+	visibility: hidden;
+}
+

@@ -1,7 +1,9 @@
-import React from 'react'
-import { ReactDOM } from 'react'
-import DOM from 'react-dom'
-import { Link } from 'react-router'
+import React from 'react';
+import { ReactDOM } from 'react';
+import DOM from 'react-dom';
+import { Link } from 'react-router';
+import NavLink from './NavLink';
+import DropDown from './DropDown'
 
 class Navs extends React.Component {
 
@@ -9,10 +11,14 @@ class Navs extends React.Component {
         let props = this.props
         return (
             <ul>
-                <li><Link to="/" activeClassName="active">Home</Link></li>
-                <li><Link to="/About" activeClassName="active">About</Link></li>
-                <li><Link to="/Portfolio" activeClassName="active">Portfolio</Link></li>
-                <li><Link to="/Contact" activeClassName="active">Contact</Link></li>
+                <li><NavLink path="/" name="Home" /></li>
+                <li><NavLink path="/About" name="About" /></li>
+                <li><DropDown path="/Portfolio" name="Portfolio">
+                    <NavLink path="/Portfolio/Design" name="Design" />
+                    <NavLink path="/Portfolio/FeedBack" name="Feedback"/>
+                    <NavLink path="/Portfolio/Engineering" name="Engineering"/>
+                </ DropDown></li>
+                <li><NavLink path="/Contact" name="Contact" /></li>
                 <ul className="social_list">
                     <li><a href="https://www.instagram.com/gundogmillionaire"><span className="social_instagram icon_list"></span></a></li>
                     <li><a href="https://www.linkedin.com/in/gunnarerickson"><span className="social_linkedin icon_list"></span></a></li>

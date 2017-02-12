@@ -11,9 +11,7 @@ class Body extends React.Component {
         let routepath = this.props.route.pathname
         if (routepath == "/")
             title = "Home"
-        else {
-            title = routepath.slice(1)
-        }
+        else {  title = routepath.slice(1)   }
 
         return (
             <div className="main_wrapper">
@@ -28,8 +26,7 @@ class Body extends React.Component {
 function mapStateToProps(state) {
     const route = state.routing.locationBeforeTransitions;
     const Library = state.Library;
-    const images = state.images;
-    return { route, Library, images }
+    return { route, Library }
 }
 
 export default connect(mapStateToProps)(Body)
