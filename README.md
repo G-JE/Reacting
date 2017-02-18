@@ -19,7 +19,7 @@ JS libraries.
 The current build of the online portfolio has the following layout.  
 <pre>
 ---------------------------------  
-|  ---------  ----------------   |      
+| +---------++-----------------+ |      
 | | SIDEBAR |     BODY         | |  
 | |         |                  | |  
 | |         |                  | |  
@@ -29,7 +29,7 @@ The current build of the online portfolio has the following layout.
 | |         |                  | |  
 | |         |                  | |  
 | |         |                  | |  
-| |---------|                  | |  
+| +---------+                  | |  
 |           |                  | |  
 ----------------------------------       
 </pre>
