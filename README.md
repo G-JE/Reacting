@@ -17,8 +17,7 @@ what opens the gates to easy scalability and versitility. Providing a basis for 
 JS libraries.  
 
 The current build of the online portfolio has the following layout.  
->
- --------------------------------  
+---------------------------------  
 |  ---------  ----------------   |      
 | | SIDEBAR |     BODY         | |  
 | |         |                  | |  
@@ -31,8 +30,7 @@ The current build of the online portfolio has the following layout.
 | |         |                  | |  
 | |---------|                  | |  
 |           |                  | |  
-----------------------------------      
->    
+----------------------------------       
 
 The application has a clean layout with a single sidebar feature and a body unit that has components passed down to it through
 the react-router components. Currently the layout is rendered in a dynamic manner but relies on static data intialized from JSON
