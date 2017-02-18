@@ -18,11 +18,11 @@ const node = document.getElementById('root')
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route component={App}>
-        <Route path="/" component={Home} />
+      <Route path="/" component={App}>
         <Route path="/About" component={Post} />
-        <Route path="/Portfolio" component={Gallery} />
-        <Route path="/Portfolio/view/:postid" component={Post} />
+        <Route path="/Portfolio" component={Gallery}>
+          <Route path="/Portfolio/:postid" component={Post} />
+        </Route>
         <Route path="/Contact" component={Post} />
       </Route>
     </Router>

@@ -22,14 +22,14 @@ class DropDown extends React.Component{
     }
     
     render() {
-
+      let open = this.state.toggled;
         return (
           <div className="drop">
             <div className="horizontal" onClick={this.Toggle} >
               <Link to={this.props.path} activeClassName="active" > {this.props.name}</ Link>
-              <span className="arrow_carrot-right"></span>
+              <span className={(open)?"arrow_carrot-down": "arrow_carrot-right"}></span>
             </div>
-            <ul className="dropdown" className={(this.state.toggled) ? "show": "hide"}>
+            <ul className="dropdown" className={(open) ? "show": "hide"}>
               {this.props.children}
             </ul>
           </div>
