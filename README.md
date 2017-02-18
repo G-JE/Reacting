@@ -18,8 +18,8 @@ JS libraries.
 
 The current build of the online portfolio has the following layout.
 /*
- ________________________________
-|  ________  _________________   |     
+ --------------------------------
+|  ---------  ----------------   |     
 | | SIDEBAR |     BODY         | |
 | |         |                  | |
 | |         |                  | |
@@ -29,9 +29,9 @@ The current build of the online portfolio has the following layout.
 | |         |                  | |
 | |         |                  | |
 | |         |                  | |
-| |_________|                  | |
+| |---------|                  | |
 |           |                  | |
-|___________|__________________|_|    
+----------------------------------    
 */     
 
 The application has a clean layout with a single sidebar feature and a body unit that has components passed down to it through
