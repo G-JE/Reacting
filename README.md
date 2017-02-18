@@ -1,5 +1,5 @@
 # Reacting
-##The Learning Curve and Discovery of the React | Redux Framework
+##The Learning Curve to Understanding the React | Redux Framework
 *******************************************************************
 ###Purpose
 The Journey to understand the web development paradigm that is the engine of Facebook and hugely distributed web applications.  
