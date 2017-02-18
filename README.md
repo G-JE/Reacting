@@ -1,5 +1,5 @@
 # Reacting
-<<<<<<< HEAD
+
 ##The Learning Curve to Understanding the React | Redux Framework
 *******************************************************************
 ###Purpose
@@ -62,7 +62,4 @@ the journey.
 3. www.learnredux.com --> Wes Bos gives a fantastic tutorial on something other than a ToDo App! Showing how to create image gallery and simple instagram application is a unique approach offering specialty knowledge.
 
 #Updated 2.18.17 -- GJE
-=======
-#In the reducers each is a function that acts a key to an object that holds the data for action creators to update state. The name of the key
-# is set by the import name and variable name sent to the combineReducer function.
->>>>>>> heroku/master
+
