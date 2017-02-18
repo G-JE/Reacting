@@ -1,9 +1,9 @@
 # Reacting
-##REACTING --- My Learning and Discovery of the React|Redux Framework
+##The Learning Curve and Discovery of the React | Redux Framework
 *******************************************************************
 ###Purpose
 The Journey to understand the web development paradigm that is the engine of Facebook and hugely distributed web applications.  
-The basis of the structure is as follows:
+The philosophy of the system is as follows:
 
 1. Singular source of truth
 2. Separation between container and presentational components
@@ -48,5 +48,16 @@ PORTFOLIO -- renders out GIF files from my feedback and control class, which is 
 ABOUT -- Rendering generic post component, will have a personal story/ personal statement I am in process of writing.  
 CONTACT -- Form submission component to be built that will take in data and load the payload into a POSTgreSQL database.  
 
+###Server Deployment
+
+GoDaddy surprisingly cannot host web applications! In light of this let down, Heroku came to the rescue!!  
+Heroku offers a great free service for hosting web applications. By serving the out a Express.js server file with resources Heroku builds
+out the application through a GitHub repository giving a great CLI to communicate changes to the files. I have utilized many free resources 
+online to build out the current version of the app. Below are a number of the people and websites that have given me great relief through
+the journey.
+
+1. www.thegreatcodingadventure.com --> fantastic article on deploying to Heroku (Heroku offered great resources as well)
+2. The New Boston Youtube videos has a great introduction to the basics of the framework
+3. www.learnredux.com --> Wes Bos gives a fantastic tutorial on something other than a ToDo App! Showing how to create image gallery and simple instagram application is a unique approach offering specialty knowledge.
 
 #Updated 2.18.17 -- GJE
