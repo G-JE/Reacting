@@ -61,5 +61,10 @@ the journey.
 2. The New Boston Youtube videos has a great introduction to the basics of the framework
 3. www.learnredux.com --> Wes Bos gives a fantastic tutorial on something other than a ToDo App! Showing how to create image gallery and simple instagram application is a unique approach offering specialty knowledge.
 
+
+##Keeping Up With builds
+You can either go to www.gunnarerickson.com to see what the most recent deployment looks like or... pull and run webpack webpack-dev-server 
+to load a local version of the most updated version that I'm establishing on my local machine!
+
 #Updated 2.18.17 -- GJE
 
