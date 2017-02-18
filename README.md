@@ -18,20 +18,20 @@ JS libraries.
 
 The current build of the online portfolio has the following layout.  
 <pre>
----------------------------------  
++--------------------------------+  
 | +---------++-----------------+ |      
-| | SIDEBAR |     BODY         | |  
-| |         |                  | |  
-| |         |                  | |  
-| |         |                  | |  
-| |         |                  | |  
-| |         |                  | |  
-| |         |                  | |  
-| |         |                  | |  
-| |         |                  | |  
-| +---------+                  | |  
-|           |                  | |  
-----------------------------------       
+| | SIDEBAR ||    BODY         | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| |         ||                 | |  
+| +---------+|                 | |  
+|            |                 | |  
++--------------------------------+       
 </pre>
 
 The application has a clean layout with a single sidebar feature and a body unit that has components passed down to it through
