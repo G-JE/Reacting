@@ -115,7 +115,7 @@ a {
 	margin: 10px;
 	margin-right:0px;
 	height:35px;
-	transition: .5s ease;
+	transition: .15s ease;
 	border-bottom: 1px solid transparent;
 	white-space: nowrap;
 
@@ -221,7 +221,7 @@ cite{
 .arrow_carrot-right{
 font-size:1.5em;
 margin-bottom:5px;
-transition: .5s;
+transition: .3s;
 
 }
 .dropdown{
@@ -245,14 +245,15 @@ transition: .5s;
 	}
 }
 
-.drop >.horizontal:hover > span{
+.drop >.horizontal:hover > .arrow_carrot-right{
 		transform: rotate(90deg);
 }
 .show { 
-	display: inline-block;
-	display:flex;
-	flex-flow: column;
-	@include center;
+		display: inline-block;
+		display:flex;
+		flex-flow: column;
+		@include center;
+		width:100%;
 	li{
 		align-self:center;
 		text-align:center;

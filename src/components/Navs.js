@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactDOM } from 'react';
 import DOM from 'react-dom';
-import { Link } from 'react-router';
+import { Link, IndexLink } from 'react-router';
 import NavLink from './NavLink';
 import DropDown from './DropDown'
 
@@ -11,12 +11,12 @@ class Navs extends React.Component {
         let props = this.props
         return (
             <ul>
-                <li><NavLink path="/" name="Home" /></li>
+                <li><NavLink path="/" onlyActiveOnIndex={true} name="Home" /></li>
                 <li><NavLink path="/About" name="About" /></li>
                 <li><DropDown path="/Portfolio" name="Portfolio">
                     <NavLink path="/Portfolio/Design" name="Design" />
-                    <NavLink path="/Portfolio/FeedBack" name="Feedback"/>
-                    <NavLink path="/Portfolio/Engineering" name="Engineering"/>
+                    <NavLink path="/Portfolio/FeedBack" name="Feedback" />
+                    <NavLink path="/Portfolio/Engineering" name="Engineering" />
                 </ DropDown></li>
                 <li><NavLink path="/Contact" name="Contact" /></li>
                 <ul className="social_list">

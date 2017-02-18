@@ -3,15 +3,16 @@ import { ReactDOM } from 'react'
 import { Route } from 'react-router'
 import DOM from 'react-dom'
 import { connect } from 'react-redux'
+import Home from './Home'
 
 class Body extends React.Component {
 
     render() {
-        let title;
-        let routepath = this.props.route.pathname
-        if (routepath == "/")
-            title = "Home"
-        else {  title = routepath.slice(1)   }
+        let title = "Home";
+        // if (this.props.params === undefined)
+        //     title =  "Home";
+
+        // else {  title = this.props.params.section   }
 
         return (
             <div className="main_wrapper">

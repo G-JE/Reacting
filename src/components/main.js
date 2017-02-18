@@ -4,6 +4,7 @@ import DOM from 'react-dom'
 import Sidebar from './Sidebar'
 import Body from './Body'
 import { Route } from 'react-router'
+import Home from './Home'
 
 class Main extends React.Component{
 
@@ -33,7 +34,7 @@ class Main extends React.Component{
         return (
             <div className="splitter">
                 <Sidebar />
-                <Body>{this.props.children}</ Body>
+                <Body>{ this.props.children || <Home/> }</Body>
             </div>
             )
        }

@@ -6,9 +6,14 @@ import { Link } from 'react-router'
 class NavLink extends React.Component{
     
     render() {
-
+        let props = {
+            to:this.props.path,
+            activeClassName:"active",
+            onlyActiveOnIndex: this.props.onlyActiveOnIndex
+        }
+        
         return (
-            <Link to={this.props.path} activeClassName="active"> {this.props.name} </ Link> 
+            <Link {...props}> {this.props.name} </ Link> 
         )
     }  
 }
