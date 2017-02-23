@@ -44,3 +44,11 @@ ABOUT -- Rendering generic post component, will have a personal story/ personal 
 CONTACT -- Form submission component to be built that will take in data and load the payload into a POSTgreSQL database.
 
 Updated 2.18.17 -- GJE
+
+Some notes to self:
+
+#In the reducers each is a function that acts a key to an object that holds the data for action creators to update state. The name of the key
+# is set by the import name and variable name sent to the combineReducer function.
+
+#In the reducers each is a function that acts a key to an object that holds the data for action creators to update state. The name of the key
+# is set by the import name and variable name sent to the combineReducer function.
