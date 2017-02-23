@@ -102,30 +102,31 @@ li{
 	padding:5px;
 	display:flex;
 	@include center;
-
 }
 
-a {  
-	text-decoration:none;
-	text-align:center;
-	font-size: 1.5em;
-	display: inline-block;
-	width: 90%;
-	color:black;
-	margin: 10px;
-	margin-right:0px;
-	height:35px;
-	transition: .15s ease;
-	border-bottom: 1px solid transparent;
-	white-space: nowrap;
 
-	&:hover{
-		color:cyan;
-		font-size: 1.75em;
-		
+a.nav_link{
+			text-decoration:none;
+			text-align:center;
+			font-size: 1.5em;
+			display: inline-block;
+			width: 90%;
+			color:black;
+			margin: 10px;
+			margin-right:0px;
+			height:35px;
+			transition: .15s ease;
+			border-bottom: 1px solid transparent;
+			white-space: nowrap;
+
+			&:hover{
+				color:cyan;
+				font-size: 1.75em;
+				
+		}
 	}
 
-}
+
 
 .gallery{
 	margin-top: 75px;
@@ -173,6 +174,7 @@ img{
 }
 
 .quote_container{
+	margin-top:100px;
  display:flex;
  flex-flow:column wrap;
  width: 80%;
@@ -185,11 +187,7 @@ img{
  border-style: solid;
  }
 
-.Home{
-	margin-top:5vh;
-	@include flex;
-	@include center;
-}
+
 .left{
  border-bottom: none;
  border-right:none;
@@ -265,3 +263,8 @@ transition: .3s;
 	visibility: hidden;
 }
 
+.fill{
+	width:100%;
+	@include center;
+	@include flex;
+}

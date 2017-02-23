@@ -20,9 +20,9 @@ class Navs extends React.Component {
                 </ DropDown></li>
                 <li><NavLink path="/Contact" name="Contact" /></li>
                 <ul className="social_list">
-                    <li><a href="https://www.instagram.com/gundogmillionaire"><span className="social_instagram icon_list"></span></a></li>
-                    <li><a href="https://www.linkedin.com/in/gunnarerickson"><span className="social_linkedin icon_list"></span></a></li>
-                    <li><a href="https://github.com/G-JE"><span className="social_share icon_list"></span></a></li>
+                    <li><a className="nav_link" href="https://www.instagram.com/gundogmillionaire"><span className="social_instagram icon_list"></span></a></li>
+                    <li><a className="nav_link" href="https://www.linkedin.com/in/gunnarerickson"><span className="social_linkedin icon_list"></span></a></li>
+                    <li><a className="nav_link" href="https://github.com/G-JE"><span className="social_share icon_list"></span></a></li>
                 </ul>
             </ul>
         )

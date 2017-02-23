@@ -15,10 +15,9 @@ class Logo extends React.Component{
             borderRadius: '50%'
         }
 
-        return (
-           <img style={styles} className="image" src="./Images/Brand.png"></img>
-            )
-       }  
+        return ( <img style={styles} className="image" src="./Images/Brand.png"></img> )
+
+    }  
 }
 
 export default Logo

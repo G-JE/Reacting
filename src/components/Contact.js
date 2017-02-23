@@ -1,0 +1,16 @@
+import React from 'react'
+import { ReactDOM } from 'react'
+import DOM from 'react-dom'
+
+class Contact extends React.Component{
+    
+ render() {
+  return (
+   <div className="fill">
+    <h1>Contact</h1>
+   </div>
+  )
+ }  
+}
+
+export default Contact

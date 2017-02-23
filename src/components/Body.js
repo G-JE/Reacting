@@ -9,14 +9,13 @@ class Body extends React.Component {
 
     render() {
         let title = "Home";
-        // if (this.props.params === undefined)
+        //  if (this.props.route.params === undefined)
         //     title =  "Home";
 
-        // else {  title = this.props.params.section   }
+        //  else {  title = this.props.params   }
 
         return (
             <div className="main_wrapper">
-                <h1>{title}</h1>
                 {React.cloneElement(this.props.children, this.props)}
             </div>
         )
@@ -25,7 +24,7 @@ class Body extends React.Component {
 
 
 function mapStateToProps(state) {
-    const route = state.routing.locationBeforeTransitions;
+    const route = state.route;
     const Library = state.Library;
     return { route, Library }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { ReactDOM } from 'react'
 import DOM from 'react-dom'
 import { connect } from 'react-redux'
+import { Link } from 'react-router'
 
 class Gallery extends React.Component {
 
@@ -30,8 +31,10 @@ class Gallery extends React.Component {
                 <div key={i} className="image_wrapper">
                     <div className="gallery_item">
                         <div>
-                            <img title={image.name} src={image.url} style={style} />
-                            <p> {image.name} </p>
+                            <Link to={`/Portfolio/${image.id}`}>
+                                <img title={image.name} src={image.url} style={style} />
+                                <p> {image.name} </p>
+                            </Link>
                         </div>
                     </div>
                 </div>

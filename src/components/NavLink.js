@@ -13,7 +13,7 @@ class NavLink extends React.Component{
         }
         
         return (
-            <Link {...props}> {this.props.name} </ Link> 
+            <Link {...props} className="nav_link"> {this.props.name} </ Link> 
         )
     }  
 }

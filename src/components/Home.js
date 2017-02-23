@@ -8,7 +8,8 @@ class Home extends React.Component{
     render() {
         let ranIndex = Math.floor(Math.random()*(this.props.Library.quotes.length));
         return (
-            <div className="Home">
+            <div className="fill">
+                <h1>Home</h1>
                 <Quote Library={this.props.Library.quotes[ranIndex]}/>
              </div>
         )
